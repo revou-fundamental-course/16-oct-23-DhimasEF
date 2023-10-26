@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard l Yostar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png">
+</head>
+<body>
+    <nav>
+        <img src="assets/banner.png"/>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#partner">Media Partner</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#msg">Message Us</a></li>
+            <li><a href="#show">Your Name</a></li>
+        </ul>
+    </nav>
+	<div class="popup" id="show">
+		<div class="close"><a href="">&times;</a></div>
+		<div class="form">
+			<h2>Enter your name</h2>
+			<input type="text" id="name" placeholder="Input your name">
+			<div class="form-element">
+				<input type="submit" onclick="hello()" value="Submit">
+			</div>
+		</div>
+	</div>
+    <section id="home">
+        <div class="prof-content">
+			<div class="ctn-prof-text">
+				<h2>Hi <span id="hasil"></span></h2>
+				<p>Founded in 2014, Yostar Games is the top publisher, developer, and investor of games in China. Yostar specializes in development, global, publishing, invesment, and IP management of online games. The company is situated in Shanghai and Tokyo</p>
+			</div>
+			<div class="ctn-prof-img">
+				<img src="assets/img1.png"/>
+			</div>
+			<div class="ctn-prof-text">
+				<h2>Welcome to Yostar Company</h2>
+				<p>In 2017, Yostar succesfully released the mobile game Azur Lane in Japan, As popularity grew dramatically for Azur Lane, Yostar Games then succesfully hels its global release in 2018. Following Yostar Games will publishing Arknight in 2019 winter, and NEKOPARAITEN in 2020 with self developed on the schedule.</p>
+			</div>
+        </div>
+    </section>
+
+    <section id="partner">
+		<div class="part-content">
+			<h2>Media Partner</h2>
+			<div class="ctn-flex-part">
+				<div class="ctn-part">
+					<img src="assets/prt1.png"/>
+					<p>Mahjong Soul x Kaguya-sama:Love is War</p>
+				</div>
+				<div class="ctn-part">
+					<img src="assets/prt2.png"/>
+					<p>Arknights x Monster Hunter</p>
+				</div>
+				<div class="ctn-part">
+					<img src="assets/prt3.png"/>
+					<p>Azur Lane x Gridman Universe</p>
+				</div>
+			</div>
+        </div>
+    </section>
+
+    <section id="about">
+		<div class="about-content">
+			<h2>About</h2>
+			<div class="ctn-flex-about">
+				<div class="ctn-about">
+					<img src="assets/g1.png"/>
+					<div class="ctn-about-title">
+						<img src="assets/logo1.png"/>
+						<div class="ctn-about-title-text">
+							<p>Azur Lane</p>
+							<a href="">View More</a>
+						</div>
+					</div>
+				</div>
+				<div class="ctn-about">
+					<img src="assets/g2.png"/>
+					<div class="ctn-about-title">
+						<img src="assets/logo2.png"/>
+						<div class="ctn-about-title-text">
+							<p>Arknights</p>
+							<a href="">View More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ctn-flex-about">
+				<div class="ctn-about">
+					<img src="assets/g3.png"/>
+					<div class="ctn-about-title">
+						<img src="assets/logo3.png"/>
+						<div class="ctn-about-title-text">
+							<p>Mahjong Soul</p>
+							<a href="">View More</a>
+						</div>
+					</div>
+				</div>
+				<div class="ctn-about">
+					<img src="assets/g4.png"/>
+					<div class="ctn-about-title">
+						<img src="assets/logo4.png"/>
+						<div class="ctn-about-title-text">
+							<p>Nekoparaiten</p>
+							<a href="">View More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+
+    <section id="msg">
+		<div class="msg-content">
+			<h2>Message Us</h2>
+			<div class="ctn-flex-msg">
+				<div class="msg-form">
+					<h2>Input Your Data</h2>
+					<input type="text" placeholder="Subject"id="subject" required>
+					<input type="email" placeholder="Email" id="email" required>
+					<input type="text" placeholder="Comment"id="comment" required>
+					<div class="btn-msg">
+						<input type="submit" onclick="cek()"value="Submit">
+					</div>
+				</div>
+				<div class="msg-right">
+					<div class="msg-result">
+						<div class="msg-result-ctn">
+							<img src="assets/account.png"/>
+							<p id="hasil1"></p>
+						</div>
+						<div class="msg-result-ctn">
+							<img src="assets/mail.png"/>
+							<p id="hasil2"></p>
+						</div>
+						<div class="msg-result-ctn">
+							<img src="assets/comment.png"/>
+							<p id="hasil3"></p>
+						</div>
+					</div>
+					<div class="msg-mail">
+						<div class="msg-mail-ctn">
+							<img src="assets/mail.png"/>
+							<a href="info@yo-star.com">For General Inquiry</a>
+						</div>
+						<div class="msg-mail-ctn">
+							<img src="assets/mail.png"/>
+							<a href="press@yo-star.com">For Public Relations</a>
+						</div>
+						<div class="msg-mail-ctn">
+							<img src="assets/mail.png"/>
+							<a href="hr@yo-star.com">For Job Application</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>Hello my name is Dhimas Erzal Firmansyah</p>
+    <p>Original website official in <a href="https://yo-star.com/yd/index.html#/">here</a></p>
+    <p>&copy;2019 YOSTAR(HONGKONG) LIMITED. ALlRight Reserved</p>
+</footer>
+</html>
